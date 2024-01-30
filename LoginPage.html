@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        ><style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                width: max-content;
+                font-size:x-large;
+                font-weight: bold;
+                
+            }
+            .AlignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#button{
+    box-shadow: black;
+    border-radius: 100px;
+    border-width: 10px;
+    
+}
+#email_login, #password_login{
+
+    position: relative;
+    
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 100px;
+    align-items: center;
+    justify-self: center;
+
+}
+
+        </style>  
+    </head>
+    <body>    
+        <img id="logo" src="panda1.jpg" alt="Logo" align="center">  
+        <div class="AlignCenter">
+       <form method="post" >
+        <h2><u>LOGIN : </u></h2>
+            <p>
+                <label for="email">Email : </label> <input type="email" id="email_login" placeholder="Email ID">
+            </p>
+            <p>
+                <label for="password">Password : </label> <input type="password" id="password_login" placeholder="Password" required>
+            </p>
+            <p>
+                <label for="signup">Don't have an account? </label> <a id=signup href="Signup.html">sign up</a>
+            </p>
+            <p>
+                <input type="submit" onclick="Submit(event)" id="button" value="SUBMIT">
+            </p>
+        </form>
+    </div>
+        <script src="Login.js"></script>
+    </body>
+</html>

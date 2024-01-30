@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+><html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width-device-width, initial-scale=1.0">
+        <title>SignUp_Page_HTML5</title>
+        <link rel="stylesheet" href="Design5.css">
+    </head>
+    <body>
+        <div class="form_container">
+            <p class="form-header"><b>SIGN UP</b><br><br></p>
+            <form  action="LoginPage.html">
+                <table class="form-table">
+                    <tr>
+                        <td>Username : </td>
+                        <td><input type="text" id="username" placeholder="Enter the Username" minlength="4" maxlength="15" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender : </td>
+                        <td><input type="radio" class="male" name="Terms" required>Male
+                            <input type="radio" class="female" name="Terms" required>Female
+                            <input type="radio" class="Others" name="Terms" required>Others
+                            </td>
+
+                    </tr>
+                
+                    <tr>
+                        <td>Email : </td>
+                        <td><input type="email" id="email_signup"  placeholder="Enter the MailID" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password : </td>
+                        <td><input type="password" id="pass_signup" placeholder="Enter the Password" pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Be Strong & atleast 8 or more Characters." required></td>
+                    </tr>
+                    <tr>
+                        <td>DOB : </td>
+                        <td><input type="date" max="2008-01-01" min="2001-01-01" required></td>
+                    </tr>
+                    <tr>
+                        <td>Register Number. : </td>
+                        <td><input type="text" minlength="10" maxlength="10" placeholder="Enter Your Register No." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address : </td>
+                        <td><input type="text"  contenteditable="true" placeholder="Enter the Address" required></td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td>PhoneNumber : </td>
+                        <td><input type="tel" placeholder="Enter Your Mobile No." minlength="10" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">    
+                        Terms of Service : 
+                        <input type="radio" class="agree" name="terms" > Confirm
+                        <input type="radio" class="disagree" name="terms" >Disagree
+                        <br>  
+                        <a href="https://www.example.com" target="_blank">Check it Out!</a>
+                            
+                        <br><br><input type="submit" onclick="Submit1()" value="SUBMIT" >
+                        <input type="reset" value="CLEAR">  </td>
+        
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="Login.js"></script>
+    </body>
+</html>
